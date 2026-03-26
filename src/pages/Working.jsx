@@ -1,4 +1,42 @@
+import React, { useState, useRef } from 'react';
 import * as Icons from 'lucide-react';
+
+const TiltCard = ({ children, className, index }) => {
+  const [rotate, setRotate] = useState({ x: 0, y: 0 });
+  const cardRef = useRef(null);
+
+  const onMouseMove = (e) => {
+    if (!cardRef.current) return;
+    const card = cardRef.current.getBoundingClientRect();
+    const x = e.clientX - card.left;
+    const y = e.clientY - card.top;
+    const centerX = card.width / 2;
+    const centerY = card.height / 2;
+    const rotateX = (y - centerY) / 10;
+    const rotateY = (centerX - x) / 10;
+
+    setRotate({ x: rotateX, y: rotateY });
+  };
+
+  const onMouseLeave = () => {
+    setRotate({ x: 0, y: 0 });
+  };
+
+  return (
+    <div
+      ref={cardRef}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
+      className={className}
+      style={{
+        transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
+        transition: rotate.x === 0 ? 'transform 0.5s ease' : 'none'
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 const Working = () => {
   const steps = [
@@ -48,13 +86,13 @@ const Working = () => {
         <div className="timeline-line reveal"></div>
         <div className="timeline-steps">
           {steps.map((step, index) => (
-            <div key={index} className={`timeline-step reveal delay-${index + 1}`}>
+            <TiltCard key={index} index={index} className={`timeline-step reveal delay-${index + 1}`}>
               <div className={`step-icon-wrapper ${step.colorClass}`}>
                 {step.icon}
               </div>
               <h3 className="step-title">{step.title}</h3>
               <p className="step-desc">{step.desc}</p>
-            </div>
+            </TiltCard>
           ))}
         </div>
       </div>
