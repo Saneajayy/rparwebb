@@ -3,21 +3,21 @@ import * as Icons from 'lucide-react';
 const Contact = () => {
   const supportCards = [
     {
-      icon: <Icons.MessageCircle size={28} className="text-gray-500" />,
+      icon: <Icons.MessageCircle size={28} className="text-white" />,
       title: 'Customer Support',
       desc: 'For booking help, repair queries, and general questions.',
       linkText: 'support@rpar.in',
       linkUrl: 'mailto:support@rpar.in'
     },
     {
-      icon: <Icons.Handshake size={28} className="text-yellow-600" />,
+      icon: <Icons.Handshake size={28} className="text-white" />,
       title: 'Partner Inquiries',
       desc: 'Interested in joining RPAR as a repair shop partner?',
       linkText: 'partner@rpar.in',
       linkUrl: 'mailto:partner@rpar.in'
     },
     {
-      icon: <Icons.MapPin size={28} className="text-red-500" />,
+      icon: <Icons.MapPin size={28} className="text-white" />,
       title: 'Our Office',
       desc: 'Una, Himachal Pradesh - 177209',
       linkText: 'India',
