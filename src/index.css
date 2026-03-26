@@ -239,14 +239,14 @@ h6 {
 }
 
 .primary-btn {
-  background-color: #1a1aad;
+  background-color: rgba(7, 51, 153, 0.85);
   color: #ffffff;
-  border: 1px solid #1a1aad;
+  border: 1px solid rgba(7, 51, 153, 0.85);
 }
 
 .primary-btn:hover {
-  background-color: #ffffff;
-  color: #1a1aad;
+  background-color: rgba(7, 51, 153, 1);
+  color: #ffffff;
 }
 
 .dark-btn {
@@ -718,23 +718,23 @@ main {
   border-radius: 999px;
   padding: 10px 22px;
   font-size: 0.85rem;
-  background-color: #0ea5e9;
+  background-color: rgba(7, 51, 153, 0.85);
   color: #ffffff;
-  border: 1px solid #0ea5e9;
+  border: 1px solid rgba(7, 51, 153, 0.85);
   white-space: nowrap;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px -2px rgba(14, 165, 233, 0.4);
+  box-shadow: 0 4px 12px -2px rgba(7, 51, 153, 0.3);
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .hero-btn:hover {
-  background-color: #0284c7;
+  background-color: rgba(7, 51, 153, 1);
   color: #ffffff;
-  border-color: #0284c7;
+  border-color: rgba(7, 51, 153, 1);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px -4px rgba(14, 165, 233, 0.5);
+  box-shadow: 0 8px 20px -4px rgba(7, 51, 153, 0.5);
 }
 
 .hero-trust {
