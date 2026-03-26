@@ -26,9 +26,9 @@ const Partner = () => {
 
   return (
     <div className="partner-container max-w-7xl section">
-      <div className="text-center mb-16 reveal">
+      <div className="text-center mb-20 reveal">
         <h1 className="text-5xl font-bold mb-6">Own a <span className="highlight" style={{ color: '#000262' }}>repair</span> shop?</h1>
-        <p className="text-muted text-lg mb-10 max-w-2xl mx-auto">
+        <p className="text-muted text-lg max-w-2xl mx-auto">
           Join a growing network of trusted repair professionals. RPAR gives you the technology to reach more customers, manage bookings digitally, and build a reputation that works for you.
         </p>
       </div>
@@ -48,10 +48,6 @@ const Partner = () => {
               </div>
             ))}
           </div>
-
-          <button className="hero-btn primary-btn mt-10">
-            Become a Repair Partner <Icons.ArrowRight size={18} />
-          </button>
         </div>
 
         <div className="partner-visual reveal delay-1">
@@ -74,11 +70,18 @@ const Partner = () => {
               <div className="check-item"><Icons.CheckCircle2 size={16} style={{ color: '#000262' }}/> Secure in-app payment collection</div>
               <div className="check-item"><Icons.CheckCircle2 size={16} style={{ color: '#000262' }}/> Dedicated partner support</div>
             </div>
-
-            <button className="hero-btn dark-btn w-full mt-8">
-              Apply to Partner <Icons.ArrowRight size={18} />
-            </button>
           </div>
+        </div>
+      </div>
+
+      <div className="partner-actions reveal delay-2 text-center mt-12">
+        <div className="flex justify-center gap-6">
+          <button className="hero-btn primary-btn">
+            Become a Repair Partner <Icons.ArrowRight size={18} />
+          </button>
+          <button className="hero-btn dark-btn">
+            Apply to Partner <Icons.ArrowRight size={18} />
+          </button>
         </div>
       </div>
     </div>

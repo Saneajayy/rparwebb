@@ -1075,9 +1075,10 @@ main {
 
 .partner-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: stretch;
+  margin-bottom: 48px;
 }
 
 .partner-content {
@@ -1148,9 +1149,13 @@ main {
   border-radius: var(--border-radius-lg);
   padding: 40px;
   width: 100%;
+  height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
   max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .dashboard-header {
@@ -1334,8 +1339,24 @@ main {
   margin-top: 2.5rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mt-8 {
