@@ -1,5 +1,4 @@
 import * as Icons from 'lucide-react';
-import './Partner.css';
 
 const Partner = () => {
   const benefits = [

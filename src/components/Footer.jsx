@@ -1,5 +1,4 @@
 import { Play } from 'lucide-react';
-import './Footer.css';
 
 const Footer = () => {
   return (

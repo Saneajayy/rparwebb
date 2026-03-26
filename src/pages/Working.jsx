@@ -1,5 +1,4 @@
 import * as Icons from 'lucide-react';
-import './Working.css';
 
 const Working = () => {
   const steps = [

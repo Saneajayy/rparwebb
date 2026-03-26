@@ -1,5 +1,4 @@
 import * as Icons from 'lucide-react';
-import './Contact.css';
 
 const Contact = () => {
   const supportCards = [

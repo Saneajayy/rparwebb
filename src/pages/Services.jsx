@@ -1,5 +1,4 @@
 import * as Icons from 'lucide-react';
-import './Services.css';
 
 const Services = () => {
   const services = [

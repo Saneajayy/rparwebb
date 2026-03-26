@@ -1,6 +1,5 @@
 import * as Icons from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
-import './Home.css';
 
 const AnimatedCounter = ({ end, duration = 1500 }) => {
   const numberRef = useRef(null);
