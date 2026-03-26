@@ -19,9 +19,9 @@ const Contact = () => {
     {
       icon: <Icons.MapPin size={28} className="text-white" />,
       title: 'Our Office',
-      desc: 'Una, Himachal Pradesh - 177209',
+      desc: 'Saloh, Teh. Haroli, Distt. Una, Himachal Pradesh - 177209',
       linkText: 'India',
-      linkUrl: '#'
+      linkUrl: 'https://maps.google.com/?q=Saloh,Haroli,Una,HimachalPradesh'
     }
   ];
 
