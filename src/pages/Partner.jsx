@@ -27,7 +27,7 @@ const Partner = () => {
   return (
     <div className="partner-container max-w-7xl section">
       <div className="text-center mb-16 reveal">
-        <h1 className="text-5xl font-bold mb-6">Own a repair shop?</h1>
+        <h1 className="text-5xl font-bold mb-6">Own a <span className="highlight" style={{ color: '#000262' }}>repair</span> shop?</h1>
         <p className="text-muted text-lg mb-10 max-w-2xl mx-auto">
           Join a growing network of trusted repair professionals. RPAR gives you the technology to reach more customers, manage bookings digitally, and build a reputation that works for you.
         </p>
