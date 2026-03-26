@@ -1082,6 +1082,7 @@ main {
   align-items: stretch;
   margin-bottom: 48px;
   width: 100%;
+  transform: translateX(-24px);
 }
 
 .partner-content {
