@@ -44,9 +44,9 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="services-grid reveal delay-1">
+      <div className="services-grid">
         {services.map((service, index) => (
-          <div key={index} className={`service-card ${index === 0 ? 'active-card' : ''}`}>
+          <div key={index} className={`service-card reveal delay-${index + 1} ${index === 0 ? 'active-card' : ''}`}>
             <div className="service-icon-wrapper">
               {service.icon}
             </div>

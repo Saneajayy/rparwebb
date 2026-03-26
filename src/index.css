@@ -145,6 +145,10 @@ h6 {
   transition-delay: 0.75s;
 }
 
+.delay-6 {
+  transition-delay: 0.9s;
+}
+
 /* ===== Fade-in page animation ===== */
 @keyframes fadeIn {
   from {
@@ -978,9 +982,9 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  justify-content: flex-start;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .services-grid {
