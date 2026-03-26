@@ -49,13 +49,6 @@ const Partner = () => {
             ))}
           </div>
 
-          <div className="flex gap-6 mt-16">
-            <button className="hero-btn primary-btn">
-              Become a Repair Partner <Icons.ArrowRight size={18} />
-            </button>
-            <button className="hero-btn dark-btn">
-              Apply to Partner <Icons.ArrowRight size={18} />
-            </button>
           </div>
         </div>
 
@@ -79,6 +72,10 @@ const Partner = () => {
               <div className="check-item"><Icons.CheckCircle2 size={16} style={{ color: '#000262' }}/> Secure in-app payment collection</div>
               <div className="check-item"><Icons.CheckCircle2 size={16} style={{ color: '#000262' }}/> Dedicated partner support</div>
             </div>
+
+            <button className="hero-btn primary-btn w-full mt-8">
+              Become a Repair Partner <Icons.ArrowRight size={18} />
+            </button>
           </div>
         </div>
       </div>
