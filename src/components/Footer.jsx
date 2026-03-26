@@ -59,7 +59,7 @@ const Footer = () => {
               <li><Link to="/cancellation-refunds">Cancellation & Refunds</Link></li>
             </ul>
 
-            <a href="/rpar.apk" download className="btn btn-outline footer-app-btn mt-8">
+            <a href="https://drive.google.com/uc?export=download&id=1K3f2aPZzdNz3K2-opAlxA8cmqZjDVrB4" download className="btn btn-outline footer-app-btn mt-8">
               <Play size={16} fill="currentColor" /> Click to Download App
             </a>
           </div>

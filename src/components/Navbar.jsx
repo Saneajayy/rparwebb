@@ -71,7 +71,7 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-actions">
-          <a href="/rpar.apk" download className="btn nav-download-btn">
+          <a href="https://drive.google.com/uc?export=download&id=1K3f2aPZzdNz3K2-opAlxA8cmqZjDVrB4" download className="btn nav-download-btn">
             Download App
           </a>
         </div>
