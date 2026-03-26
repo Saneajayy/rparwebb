@@ -34,7 +34,6 @@ const Navbar = () => {
       <nav className="navbar max-w-7xl">
         <a href="#home" className="navbar-logo">
           <img src="/rpar-logo.png" alt="RPAR" className="logo-image" />
-          <span className="logo-text">RPAR</span>
         </a>
 
         <ul className="navbar-links">
@@ -55,7 +54,7 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-actions">
-          <button className="btn btn-outline" style={{ borderRadius: '999px', fontWeight: 600, padding: '10px 24px' }}>
+          <button className="btn btn-outline" style={{ borderRadius: '999px', fontWeight: 600, padding: '10px 24px', color: '#fff', borderColor: 'rgba(255, 255, 255, 0.5)' }}>
             Download App
           </button>
         </div>
