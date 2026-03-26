@@ -866,134 +866,174 @@ main {
   padding-bottom: 60px;
 }
 
-.timeline-container {
+/* ===== Working Flow ===== */
+.working-flow {
   position: relative;
-  margin-top: 80px;
-  padding: 0 20px;
+  padding: 60px 0 40px;
 }
 
-.timeline-line {
+/* Progress track bar */
+.flow-track {
+  position: relative;
+  height: 4px;
+  background: rgba(0, 2, 98, 0.12);
+  border-radius: 100px;
+  margin: 0 5%;
+  margin-bottom: 40px;
+}
+
+.flow-progress {
   position: absolute;
-  top: 40px;
-  left: 10%;
-  right: 10%;
-  height: 2px;
-  background: linear-gradient(90deg, #3b82f6 0%, #3b82f6 50%, #10b981 100%);
-  z-index: 1;
-  transform-origin: left;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(7, 51, 153, 0.85), rgba(0, 4, 140, 0.85));
+  border-radius: 100px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 12px rgba(7, 51, 153, 0.4);
 }
 
-.timeline-line.reveal {
-  opacity: 1;
-  transform: scaleX(0);
-  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+/* Dots on the track */
+.flow-dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(0, 2, 98, 0.15);
+  border: 2px solid rgba(0, 2, 98, 0.2);
+  transition: all 0.4s ease;
 }
 
-.timeline-line.reveal.active {
-  transform: scaleX(1);
+.flow-dot.active {
+  background: rgba(7, 51, 153, 0.85);
+  border-color: rgba(7, 51, 153, 1);
+  box-shadow: 0 0 0 4px rgba(7, 51, 153, 0.15);
+  transform: translate(-50%, -50%) scale(1.3);
 }
 
-.timeline-steps {
+/* Step cards grid */
+.flow-steps {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
+  gap: 20px;
   position: relative;
-  z-index: 2;
 }
 
-.timeline-step {
+.flow-step {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 28px 16px;
+  border-radius: var(--border-radius-lg);
+  background: linear-gradient(-45deg,
+      rgba(0, 2, 98, 0.06) 0%,
+      rgba(0, 4, 140, 0.04) 50%,
+      rgba(0, 2, 98, 0.06) 100%);
+  border: 1px solid rgba(0, 2, 98, 0.1);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.step-icon-wrapper {
-  width: 80px;
-  height: 80px;
+.flow-step.active {
+  opacity: 1;
+  transform: translateY(0);
+  background: linear-gradient(-45deg,
+      rgba(0, 2, 98, 0.92) 0%,
+      rgba(0, 4, 140, 0.85) 50%,
+      rgba(0, 2, 98, 0.92) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 10px 30px -8px rgba(0, 2, 98, 0.35);
+}
+
+/* Step icon circle */
+.flow-step-icon {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
-  background-color: #fff;
-  border: 4px solid #fff;
-  box-shadow: 0 0 0 2px #e2e8f0;
-  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  background: rgba(0, 2, 98, 0.08);
+  color: rgba(0, 2, 98, 0.5);
+  border: 2px solid rgba(0, 2, 98, 0.12);
+  transition: all 0.5s ease;
 }
 
-.timeline-step:hover .step-icon-wrapper {
-  transform: scale(1.1);
+.flow-step-icon.active {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
-.step-blue {
-  box-shadow: 0 0 0 2px #3b82f6;
-  background-color: #eff6ff;
+.flow-step-number {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: rgba(0, 2, 98, 0.3);
+  margin-bottom: 8px;
+  transition: color 0.4s ease;
 }
 
-.step-yellow {
-  box-shadow: 0 0 0 2px #3b82f6;
-  background-color: #fefce8;
+.flow-step.active .flow-step-number {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.step-blue-solid {
-  box-shadow: 0 0 0 2px #3b82f6;
-  background-color: #3b82f6;
-}
-
-.step-gray {
-  box-shadow: 0 0 0 2px #3b82f6;
-  background-color: #f8fafc;
-}
-
-.step-green {
-  box-shadow: 0 0 0 2px #3b82f6;
-  border-color: #10b981;
-  background-color: #f0fdf4;
-}
-
-.timeline-step:last-child .step-icon-wrapper {
-  box-shadow: 0 0 0 2px #10b981;
-}
-
-.step-title {
-  font-size: 1.05rem;
+.flow-step-title {
+  font-size: 0.95rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--color-text);
+  transition: color 0.4s ease;
 }
 
-.step-desc {
-  font-size: 0.85rem;
+.flow-step.active .flow-step-title {
+  color: #ffffff;
+}
+
+.flow-step-desc {
+  font-size: 0.8rem;
   color: var(--color-text-muted);
   line-height: 1.6;
+  transition: color 0.4s ease;
+}
+
+.flow-step.active .flow-step-desc {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 @media (max-width: 1024px) {
-  .timeline-steps {
+  .flow-steps {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 16px;
   }
 
-  .timeline-line {
-    top: 0;
-    bottom: 0;
-    left: 60px;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, #3b82f6 0%, #10b981 100%);
+  .flow-track {
+    display: none;
   }
 
-  .timeline-step {
+  .flow-step {
+    opacity: 1;
+    transform: translateY(0);
     flex-direction: row;
     text-align: left;
-    gap: 24px;
+    gap: 20px;
+    align-items: flex-start;
   }
 
-  .step-icon-wrapper {
+  .flow-step-icon {
+    min-width: 56px;
+    height: 56px;
     margin-bottom: 0;
   }
 }
+
 
 /* ===== Services Section ===== */
 .services-container {
