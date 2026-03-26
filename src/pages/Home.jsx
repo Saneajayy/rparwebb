@@ -82,8 +82,8 @@ const PhoneAnimation = () => {
     <div className="phone-screen-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', width: '100%', background: 'linear-gradient(160deg, #e0f2fe 0%, #f0f9ff 100%)', borderRadius: '40px', overflow: 'hidden', padding: '16px' }}>
 
       {/* App Header (Sky Blue/Teal Theme) */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '54px', marginBottom: '20px', padding: '0 8px', gap: '12px' }}>
-        <img src="/rpar-logo.png" alt="R" style={{ width: '28px', height: '28px', objectFit: 'contain', flexShrink: 0 }} />
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px', marginBottom: '20px', padding: '0 8px', gap: '12px' }}>
+        <img src="/rpar-logo.png" alt="R" style={{ width: '22px', height: '22px', objectFit: 'contain', flexShrink: 0 }} />
 
         {/* Search Bar */}
         <div style={{ flex: 1, height: '32px', backgroundColor: '#ffffff', borderRadius: '20px', border: '1px solid #bae6fd', display: 'flex', alignItems: 'center', padding: '0 12px' }}>
@@ -224,9 +224,9 @@ const Home = () => {
         </div>
 
         <div className="hero-visual reveal delay-3">
-          <div className="phone-mockup">
-            <div className="phone-notch"></div>
-            <div className="phone-screen" style={{ padding: 0, backgroundColor: '#000' }}>
+          <div className="hand-mockup-wrapper">
+            <img src="/hand-mockup.png" alt="RPAR App" className="hand-mockup-img" />
+            <div className="hand-screen-overlay">
               <PhoneAnimation />
             </div>
           </div>
