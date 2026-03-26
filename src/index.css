@@ -137,6 +137,14 @@ h6 {
   transition-delay: 0.45s;
 }
 
+.delay-4 {
+  transition-delay: 0.6s;
+}
+
+.delay-5 {
+  transition-delay: 0.75s;
+}
+
 /* ===== Fade-in page animation ===== */
 @keyframes fadeIn {
   from {
@@ -850,6 +858,17 @@ main {
   height: 2px;
   background: linear-gradient(90deg, #3b82f6 0%, #3b82f6 50%, #10b981 100%);
   z-index: 1;
+  transform-origin: left;
+}
+
+.timeline-line.reveal {
+  opacity: 1;
+  transform: scaleX(0);
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+}
+
+.timeline-line.reveal.active {
+  transform: scaleX(1);
 }
 
 .timeline-steps {

@@ -44,11 +44,11 @@ const Working = () => {
         </p>
       </div>
 
-      <div className="timeline-container reveal delay-1">
-        <div className="timeline-line"></div>
+      <div className="timeline-container">
+        <div className="timeline-line reveal"></div>
         <div className="timeline-steps">
           {steps.map((step, index) => (
-            <div key={index} className="timeline-step">
+            <div key={index} className={`timeline-step reveal delay-${index + 1}`}>
               <div className={`step-icon-wrapper ${step.colorClass}`}>
                 {step.icon}
               </div>
