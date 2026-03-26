@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 :root {
@@ -10,7 +11,7 @@ html {
   --color-bg: #fafafa;
   --color-text: #111827;
   --color-text-muted: #6b7280;
-  --color-primary: #2563eb;
+  --color-primary: #0e0178;
   --color-primary-light: #eff6ff;
   --color-surface: #ffffff;
   --color-border: #e5e7eb;
@@ -47,10 +48,23 @@ body {
 }
 
 .highlight {
-  background-color: #e9d5ff; /* Soft purple */
-  padding: 0 12px;
-  border-radius: 8px;
+  position: relative;
   display: inline-block;
+  padding: 0 8px; /* Safe padding for cursor */
+  z-index: 1;
+}
+
+.highlight::before {
+  content: '';
+  position: absolute;
+  bottom: 8%;  /* Extended further down */
+  top: 30%;    /* Extended further up to increase marker broadness */
+  left: -2px;
+  right: -2px;
+  background-color: #e9d5ff; /* Smooth soft purple */
+  border-radius: 4px;
+  z-index: -1; /* Puts marker cleanly behind the black text */
+  transform: rotate(-1deg); /* Classic hand-drawn marker tilt */
 }
 
 a {
@@ -153,7 +167,7 @@ main {
   color: #fff;
 }
 .btn-blue:hover {
-  background-color: #1d4ed8;
+  background-color: #080045;
   box-shadow: var(--shadow-md);
 }
 
@@ -198,6 +212,8 @@ main {
 /* Generic Section Padding */
 .section {
   padding: 80px 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 
 /* Scroll Animations */

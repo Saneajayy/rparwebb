@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className="navbar-wrapper">
       <nav className="navbar max-w-7xl">
         <a href="#home" className="navbar-logo">
-          <div className="logo-icon">R</div>
+          <img src="/rpar-logo.png" alt="RPAR" className="logo-image" />
           <span className="logo-text">RPAR</span>
         </a>
 

@@ -82,7 +82,7 @@ const Home = () => {
       <div className="max-w-7xl hero-content-wrapper">
         <div className="hero-text-content reveal">
           <h1 className="hero-title">
-            Online <span style={{ color: '#2563eb' }}>Repairs</span><br />
+            Online <span style={{ color: '#0e0178' }}>Repairs</span><br />
             <span className="highlight">
               {typedText}
               <span className="cursor-blink">|</span>
@@ -106,7 +106,7 @@ const Home = () => {
             <div className="trust-stats">
               <h2 className="trust-number"><AnimatedCounter end={999} />+</h2>
               <p className="trust-text">
-                Satisfied <span style={{ color: '#2563eb' }}>Repairs</span><br />Across India
+                Satisfied <span style={{ color: '#0e0178' }}>Repairs</span><br />Across India
               </p>
             </div>
           </div>
