@@ -663,9 +663,9 @@ main {
   border-radius: 999px;
   padding: 10px 22px;
   font-size: 0.85rem;
-  background-color: #000262; /* use #000262 instead of #000262ff as hex alpha is unneeded here */
+  background-color: #0e0178;
   color: #ffffff;
-  border: 1px solid #000262;
+  border: 1px solid #0e0178;
   white-space: nowrap;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
@@ -676,8 +676,8 @@ main {
 
 .hero-btn:hover {
   background-color: #ffffff;
-  color: #000262;
-  border-color: #000262;
+  color: #0e0178;
+  border-color: #0e0178;
   transform: translateY(-2px);
 }
 
@@ -691,7 +691,7 @@ main {
 .trust-stats {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .trust-number {
