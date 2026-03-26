@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import * as Icons from 'lucide-react';
 
 const TiltCard = ({ children, className }) => {
-  const [rotate, setRotate] = useState({ x: 0, y: 0 });
   const cardRef = useRef(null);
 
   const onMouseMove = (e) => {
@@ -12,14 +11,15 @@ const TiltCard = ({ children, className }) => {
     const y = e.clientY - card.top;
     const centerX = card.width / 2;
     const centerY = card.height / 2;
-    const rotateX = (y - centerY) / 8; // Slightly more sensitive
-    const rotateY = (centerX - x) / 8;
+    const rotateX = (y - centerY) / 10;
+    const rotateY = (centerX - x) / 10;
 
-    setRotate({ x: rotateX, y: rotateY });
+    cardRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };
 
   const onMouseLeave = () => {
-    setRotate({ x: 0, y: 0 });
+    if (!cardRef.current) return;
+    cardRef.current.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
   };
 
   return (
@@ -29,12 +29,11 @@ const TiltCard = ({ children, className }) => {
       onMouseLeave={onMouseLeave}
       className={className}
       style={{
-        transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
-        transition: rotate.x === 0 ? 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)' : 'none',
+        transition: 'transform 0.1s ease-out',
         transformStyle: 'preserve-3d'
       }}
     >
-      <div style={{ transform: 'translateZ(20px)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ transform: 'translateZ(30px)', height: '100%', display: 'flex', flexDirection: 'column' }}>
         {children}
       </div>
     </div>
