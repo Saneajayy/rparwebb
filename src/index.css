@@ -374,6 +374,25 @@ h6 {
   display: flex;
 }
 
+.nav-download-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 8px 22px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.nav-download-btn:hover {
+  background: #fff;
+  color: #0e0178;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 /* ===== Footer ===== */
 .footer {
   background-color: var(--color-footer-bg);
@@ -386,7 +405,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   gap: 64px;
-  margin-bottom: 64px;
+  margin-bottom: 100px;
   flex-wrap: wrap;
 }
 
@@ -435,20 +454,39 @@ h6 {
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition: var(--transition);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  
+  color: white;
+  transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: #ff3b3b; /* or your brand color */
+  transform: translateY(-3px);
 }
+
+
+
+.social-icon:nth-child(1):hover {
+  background: linear-gradient(
+    45deg,
+    #FCAF45,
+    #FF7E50,
+    #F56040,
+    #E1306C,
+    #C13584,
+    #833AB4,
+    #405DE6
+  );
+  color: #fff;
+}
+.social-icon:nth-child(2):hover { background: #0077B5; } /* LinkedIn */
+.social-icon:nth-child(3):hover { background: #1DA1F2; } /* Twitter */
 
 .footer-links-grid {
   display: flex;
@@ -485,6 +523,8 @@ h6 {
   border-color: rgba(255, 255, 255, 0.2) !important;
   color: #fff !important;
   border-radius: 8px !important;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
 }
 
 .footer-app-btn:hover {
@@ -494,6 +534,7 @@ h6 {
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 80px;
   padding-top: 32px;
   display: flex;
   justify-content: space-between;

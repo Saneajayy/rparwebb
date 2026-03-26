@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navLinks = [
     { name: 'Home', id: 'home' },
@@ -12,6 +15,8 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
+    if (location.pathname !== '/') return;
+
     const handleScroll = () => {
       const sections = navLinks.map(link => document.getElementById(link.id));
       const scrollPos = window.scrollY + 200; // offset
@@ -27,25 +32,37 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
+
+  const handleNavClick = (e, id) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // If we're on a legal page, navigating directly with a hash might not trigger a scroll
+      // but react-router-dom usually handles it or browser does it automatically if href is correct
+      // To be safe, navigate first.
+      navigate(`/#${id}`);
+    }
+  };
 
   return (
     <div className="navbar-wrapper">
       <nav className="navbar max-w-7xl">
-        <a href="#home" className="navbar-logo">
+        <Link to="/#home" className="navbar-logo" onClick={(e) => handleNavClick(e, 'home')}>
           <img src="/rpar-logo.png" alt="RPAR" className="logo-image" />
-        </a>
+        </Link>
 
         <ul className="navbar-links">
           {navLinks.map((link) => (
             <li key={link.id}>
               <a
-                href={`#${link.id}`}
-                className={`nav-link ${activeSection === link.id ? 'active' : ''}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById(link.id)?.scrollIntoView({ behavior: 'smooth' });
-                }}
+                href={location.pathname === '/' ? `#${link.id}` : `/#${link.id}`}
+                className={`nav-link ${activeSection === link.id && location.pathname === '/' ? 'active' : ''}`}
+                onClick={(e) => handleNavClick(e, link.id)}
               >
                 {link.name}
               </a>
@@ -54,7 +71,7 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-actions">
-          <button className="btn btn-outline" style={{ borderRadius: '999px', fontWeight: 600, padding: '10px 24px', color: '#fff', borderColor: 'rgba(255, 255, 255, 0.5)' }}>
+          <button className="btn nav-download-btn">
             Download App
           </button>
         </div>
@@ -64,3 +81,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

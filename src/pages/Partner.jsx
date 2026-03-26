@@ -1,4 +1,5 @@
 import * as Icons from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Partner = () => {
   const benefits = [
@@ -20,7 +21,7 @@ const Partner = () => {
     {
       icon: <Icons.LineChart size={20} className="text-blue" />,
       title: 'Grow With Technology',
-      desc: 'Use RPAR\'s platform to scale your business without spending on expensive infrastructure.',
+      desc: "Use RPAR's platform to scale your business without spending on expensive infrastructure.",
     }
   ];
 
@@ -56,11 +57,7 @@ const Partner = () => {
 
         <div className="partner-visual reveal delay-1">
           <div className="partner-dashboard-card glass">
-            <div className="dashboard-header">
-              <div className="dashboard-logo">
-                <div className="logo-icon logo-small">R</div> <span className="logo-text">RPAR Partner</span>
-              </div>
-            </div>
+           
             
             <div className="dashboard-metrics">
               <div className="metric">

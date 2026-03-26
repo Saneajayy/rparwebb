@@ -24,7 +24,7 @@ const Services = () => {
     },
     {
       icon: <Icons.Wrench size={32} className="text-gray-800" />,
-      title: 'Vehicle Services',
+      title: 'Vehicle Services (Coming Soon)',
       desc: 'Two-wheeler and four-wheeler servicing, diagnostics, and minor repairs from trusted workshops.',
     },
     {

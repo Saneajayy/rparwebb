@@ -18,8 +18,8 @@ const Contact = () => {
     },
     {
       icon: <Icons.MapPin size={28} className="text-red-500" />,
-      title: 'Registered Office',
-      desc: 'RPAR Technologies Private Limited, India',
+      title: 'Our Office',
+      desc: 'Una, Himachal Pradesh - 177209',
       linkText: 'India',
       linkUrl: '#'
     }

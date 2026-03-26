@@ -1,16 +1,44 @@
-# React + Vite
+# RPAR - Online Repair Simplified
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RPAR is a high-performance, premium web platform connecting customers with verified repair professionals for electronics. 
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Modern Landing Page**: High-performance UI built with React + Vite.
+- **Smooth Navigation**: Custom Lenis smooth-scrolling and intelligent navigation.
+- **Responsive Animations**: Scroll-reveal animations for a premium feel.
+- **Legal Compliance**: Integrated Privacy Policy, Terms, and Shipping pages.
+- **Partner Dashboard Mockup**: Visual representation of the partner experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technology Stack
+- **Framework**: React 19
+- **Build Tool**: Vite 8
+- **Styling**: Tailwind CSS 4 + Modern Vanilla CSS
+- **Icons**: Lucide React + React Icons
+- **Animations**: Lenis (Smooth Scroll) + CS Transition Effects
 
-## React Compiler
+## 📦 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v18+)
+- npm
 
-## Expanding the ESLint configuration
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚢 Deployment
+The project is configured for easy deployment on **Vercel**. 
+Simply connect your GitHub repository to Vercel, and it will automatically handle the build process using the included `vercel.json` for proper SPA routing.
+
+---
+© 2026 RPAR Technologies. All rights reserved.

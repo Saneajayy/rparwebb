@@ -206,7 +206,7 @@ const Home = () => {
 
           <div className="hero-buttons reveal delay-1">
             <button className="btn hero-btn">
-              <Icons.Play size={15} fill="currentColor" /> Download on Play Store
+              <Icons.Play size={15} fill="currentColor" /> Click to Download App
             </button>
             <button className="btn hero-btn">
               <Icons.Flag size={15} /> Become a Repair Partner
@@ -215,9 +215,9 @@ const Home = () => {
 
           <div className="hero-trust reveal delay-2">
             <div className="trust-stats">
-              <h2 className="trust-number"><AnimatedCounter end={999} />+</h2>
+              <h2 className="trust-number"><AnimatedCounter end={50} />+</h2>
               <p className="trust-text">
-                Satisfied <span style={{ color: '#0e0178' }}>Repairs</span><br />Across India
+                Satisfied <span style={{ color: '#0e0178' }}>Repairs</span><br />In Una, Himachal
               </p>
             </div>
           </div>
