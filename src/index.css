@@ -81,7 +81,7 @@ h6 {
 .highlight {
   position: relative;
   color: #111827;
-  font-size: 5.4rem;
+  font-size: inherit;
   display: inline-block;
   padding: 0 8px;
   z-index: 1;
@@ -1066,9 +1066,6 @@ main {
 
 /* ===== Partner Section ===== */
 .partner-container {
-  min-height: 100vh;
-  display: flex;
-.partner-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1153,10 +1150,7 @@ main {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
-}
   max-width: 480px;
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e2e8f0;
 }
 
 .dashboard-header {
