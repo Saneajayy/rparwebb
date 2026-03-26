@@ -61,11 +61,11 @@ const PhoneAnimation = () => {
   const [step, setStep] = useState(0);
 
   const appSteps = [
-    { title: 'Device Selected', iconSmall: <Icons.Smartphone size={14} color="#a5b4fc" />, desc: 'Screen Repair - iPhone 14' },
-    { title: 'Cost Estimated', iconSmall: <Icons.FileText size={14} color="#a5b4fc" />, desc: '₹1499 Approved by Customer' },
-    { title: 'Pickup Verified', iconSmall: <Icons.ShieldCheck size={14} color="#a5b4fc" />, desc: 'Agent OTP Verified' },
-    { title: 'Repair Active', iconSmall: <Icons.Wrench size={14} color="#a5b4fc" />, desc: 'Diagnostics & Repair Ongoing' },
-    { title: 'Delivered', iconSmall: <Icons.Home size={14} color="#a5b4fc" />, desc: 'Payment securely processed.' }
+    { title: 'Device Selected', iconSmall: <Icons.Smartphone size={14} color="#0ea5e9" />, desc: 'Screen Repair - iPhone 14' },
+    { title: 'Cost Estimated', iconSmall: <Icons.FileText size={14} color="#0284c7" />, desc: '₹1499 Approved by Customer' },
+    { title: 'Pickup Verified', iconSmall: <Icons.ShieldCheck size={14} color="#0ea5e9" />, desc: 'Agent OTP Verified' },
+    { title: 'Repair Active', iconSmall: <Icons.Wrench size={14} color="#0284c7" />, desc: 'Diagnostics & Repair Ongoing' },
+    { title: 'Delivered', iconSmall: <Icons.Home size={14} color="#0ea5e9" />, desc: 'Payment securely processed.' }
   ];
 
   useEffect(() => {
@@ -79,22 +79,22 @@ const PhoneAnimation = () => {
   }, []);
 
   return (
-    <div className="phone-screen-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', width: '100%', background: 'linear-gradient(160deg, rgba(0,2,70,0.98) 0%, rgba(0,4,120,0.95) 100%)', borderRadius: '40px', overflow: 'hidden', padding: '16px' }}>
+    <div className="phone-screen-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', width: '100%', background: 'linear-gradient(160deg, #e0f2fe 0%, #f0f9ff 100%)', borderRadius: '40px', overflow: 'hidden', padding: '16px' }}>
 
       {/* App Header (Sky Blue/Teal Theme) */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '54px', marginBottom: '20px', padding: '0 8px', gap: '12px' }}>
         <img src="/rpar-logo.png" alt="R" style={{ width: '28px', height: '28px', objectFit: 'contain', flexShrink: 0 }} />
 
         {/* Search Bar */}
-        <div style={{ flex: 1, height: '32px', backgroundColor: 'rgba(255,255,255,0.07)', borderRadius: '20px', border: '1px solid rgba(255,255,255,0.12)', display: 'flex', alignItems: 'center', padding: '0 12px' }}>
-          <div style={{ width: '12px', height: '12px', borderRadius: '50%', border: '1.5px solid rgba(255,255,255,0.4)', marginRight: '6px', position: 'relative' }}>
-            <div style={{ position: 'absolute', width: '4px', height: '1.5px', background: 'rgba(255,255,255,0.4)', bottom: '-2px', right: '-2px', transform: 'rotate(45deg)' }}></div>
+        <div style={{ flex: 1, height: '32px', backgroundColor: '#ffffff', borderRadius: '20px', border: '1px solid #bae6fd', display: 'flex', alignItems: 'center', padding: '0 12px' }}>
+          <div style={{ width: '12px', height: '12px', borderRadius: '50%', border: '1.5px solid #64748b', marginRight: '6px', position: 'relative' }}>
+            <div style={{ position: 'absolute', width: '4px', height: '1.5px', background: '#64748b', bottom: '-2px', right: '-2px', transform: 'rotate(45deg)' }}></div>
           </div>
-          <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', fontWeight: 500 }}>Search...</div>
+          <div style={{ color: '#94a3b8', fontSize: '12px', fontWeight: 500 }}>Search...</div>
         </div>
 
-        <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'rgba(7,51,153,0.85)', border: '2px solid rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-          <Icons.User size={18} color="white" />
+        <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: '#e0f2fe', border: '2px solid #7dd3fc', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+          <Icons.User size={18} color="#0284c7" />
         </div>
       </div>
 
@@ -108,17 +108,17 @@ const PhoneAnimation = () => {
           return (
             <div key={i} style={{
               display: 'flex', alignItems: 'center', gap: '14px',
-              backgroundColor: isActive ? 'rgba(7,51,153,0.45)' : 'rgba(7,51,153,0.12)',
+              backgroundColor: isActive ? '#e0f2fe' : '#ffffff',
               padding: '12px 14px', borderRadius: '16px',
-              border: isActive ? '1px solid rgba(165,180,252,0.3)' : '1px solid rgba(255,255,255,0.06)',
-              boxShadow: isActive ? '0 4px 20px rgba(7,51,153,0.3)' : 'none',
+              border: isActive ? '1px solid #7dd3fc' : '1px solid #f1f5f9',
+              boxShadow: '0 2px 8px rgba(14,165,233,0.08)',
               opacity: isVisible ? 1 : 0,
               transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(15px) scale(0.95)',
               transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)'
             }}>
               <div style={{
                 minWidth: '32px', height: '32px', borderRadius: '50%',
-                backgroundColor: isCompleted ? 'rgba(7,51,153,0.85)' : 'rgba(255,255,255,0.08)',
+                backgroundColor: isCompleted ? '#0284c7' : '#bae6fd',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 transition: 'background-color 0.4s ease'
               }}>
@@ -126,8 +126,8 @@ const PhoneAnimation = () => {
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left' }}>
-                <span style={{ fontSize: '13px', fontWeight: 800, color: '#ffffff' }}>{s.title}</span>
-                <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', marginTop: '2px', lineHeight: 1.2 }}>{s.desc}</span>
+                <span style={{ fontSize: '13px', fontWeight: 800, color: '#0f172a' }}>{s.title}</span>
+                <span style={{ fontSize: '11px', color: '#64748b', marginTop: '2px', lineHeight: 1.2 }}>{s.desc}</span>
               </div>
             </div>
           );
@@ -135,17 +135,17 @@ const PhoneAnimation = () => {
       </div>
 
       {/* Bottom Nav */}
-      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginTop: '8px', padding: '14px 12px', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: '28px', border: '1px solid rgba(255,255,255,0.08)', position: 'relative', zIndex: 10 }}>
-        <Icons.Home size={20} color="rgba(165,180,252,1)" />
-        <Icons.Search size={20} color="rgba(255,255,255,0.3)" />
-        <Icons.Bell size={20} color="rgba(255,255,255,0.3)" />
-        <Icons.User size={20} color="rgba(255,255,255,0.3)" />
+      <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', marginTop: '8px', padding: '14px 12px', backgroundColor: '#ffffff', borderRadius: '28px', boxShadow: '0 -4px 20px rgba(14,165,233,0.1)', position: 'relative', zIndex: 10 }}>
+        <Icons.Home size={20} color="#0284c7" />
+        <Icons.Search size={20} color="#94a3b8" />
+        <Icons.Bell size={20} color="#94a3b8" />
+        <Icons.User size={20} color="#94a3b8" />
       </div>
 
       {/* Success Overlay */}
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-        backgroundColor: 'rgba(0,2,70,0.88)',
+        backgroundColor: 'rgba(224,242,254,0.88)',
         backdropFilter: 'blur(10px)',
         display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
         opacity: step >= appSteps.length ? 1 : 0,
@@ -154,17 +154,16 @@ const PhoneAnimation = () => {
         zIndex: 15
       }}>
         <div style={{
-          background: 'linear-gradient(-45deg, rgba(7,51,153,0.9), rgba(0,4,140,0.9))',
+          backgroundColor: '#0284c7',
           borderRadius: '50%', padding: '24px', marginBottom: '20px',
-          border: '2px solid rgba(165,180,252,0.3)',
-          boxShadow: '0 0 40px rgba(7,51,153,0.5)',
+          boxShadow: '0 0 40px rgba(14,165,233,0.4)',
           transform: step >= appSteps.length ? 'scale(1)' : 'scale(0.5)',
           transition: 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)'
         }}>
           <Icons.Check size={48} color="white" />
         </div>
-        <h4 style={{ fontWeight: 800, fontSize: '20px', color: '#ffffff' }}>Fixed it ✓</h4>
-        <p style={{ color: 'rgba(165,180,252,0.7)', fontSize: '12px', marginTop: '6px' }}>Repair complete</p>
+        <h4 style={{ fontWeight: 800, fontSize: '20px', color: '#0369a1' }}>Fixed it ✓</h4>
+        <p style={{ color: '#0284c7', fontSize: '12px', marginTop: '6px' }}>Repair complete</p>
       </div>
     </div>
   );
