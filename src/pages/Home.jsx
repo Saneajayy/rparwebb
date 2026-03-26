@@ -84,7 +84,7 @@ const PhoneAnimation = () => {
       {/* App Header (Sky Blue/Teal Theme) */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '54px', marginBottom: '20px', padding: '0 8px', gap: '12px' }}>
         <img src="/rpar-logo.png" alt="R" style={{ width: '28px', height: '28px', objectFit: 'contain', flexShrink: 0 }} />
-        
+
         {/* Search Bar */}
         <div style={{ flex: 1, height: '32px', backgroundColor: '#f0f9ff', borderRadius: '20px', border: '1px solid #94a3b8', display: 'flex', alignItems: 'center', padding: '0 12px' }}>
           <div style={{ width: '12px', height: '12px', borderRadius: '50%', border: '1.5px solid #64748b', marginRight: '6px', position: 'relative' }}>
@@ -205,19 +205,19 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons reveal delay-1">
-            <a href="https://dl.dropboxusercontent.com/scl/fi/krczdmqdio22fugra3xwn/rpar.apk?rlkey=j9x8kgkrlkcyzdef62y1eugi5&st=3ds2pq32" className="btn hero-btn">
-              <Icons.Play size={15} fill="currentColor" /> Click to Download App
-            </a>
-            <a href="#partner" className="btn hero-btn">
+            <button className="btn hero-btn">
+              <Icons.Play size={15} fill="currentColor" /> Download on Play Store
+            </button>
+            <button className="btn hero-btn">
               <Icons.Flag size={15} /> Become a Repair Partner
-            </a>
+            </button>
           </div>
 
           <div className="hero-trust reveal delay-2">
             <div className="trust-stats">
-              <h2 className="trust-number"><AnimatedCounter end={50} />+</h2>
+              <h2 className="trust-number"><AnimatedCounter end={999} />+</h2>
               <p className="trust-text">
-                Satisfied <span style={{ color: '#0e0178' }}>Repairs</span><br />In Una, Himachal
+                Satisfied <span style={{ color: '#0e0178' }}>Repairs</span><br />Across India
               </p>
             </div>
           </div>
