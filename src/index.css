@@ -981,9 +981,10 @@ main {
 .services-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 100vh;
 }
 
 .services-grid {
@@ -1006,9 +1007,9 @@ main {
   height: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--border-radius-md);
-  padding: 32px;
+  padding: 20px 24px;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  min-height: 250px;
+  min-height: 180px;
 }
 
 .service-card:hover,
@@ -1019,21 +1020,21 @@ main {
 }
 
 .service-icon-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   display: inline-block;
 }
 
 .service-title {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #ffffff;
 }
 
 .service-desc {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.6;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
 }
 
 @media (max-width: 1024px) {
