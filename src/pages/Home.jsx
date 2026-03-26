@@ -76,7 +76,7 @@ const PhoneAnimation = () => {
       });
     }, 800); // 800ms per step hits exactly 4-5 seconds total
     return () => clearInterval(interval);
-  }, []);
+  }, [appSteps.length]);
 
   return (
     <div className="phone-screen-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', width: '100%', background: 'linear-gradient(160deg, #e0f2fe 0%, #f0f9ff 100%)', borderRadius: '40px', overflow: 'hidden', padding: '16px' }}>

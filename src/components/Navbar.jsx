@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 
+const navLinks = [
+  { name: 'Home', id: 'home' },
+  { name: 'Working', id: 'working' },
+  { name: 'Services', id: 'services' },
+  { name: 'Partner', id: 'partner' },
+  { name: 'Contact', id: 'contact' },
+];
+
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
   const navigate = useNavigate();
-
-  const navLinks = [
-    { name: 'Home', id: 'home' },
-    { name: 'Working', id: 'working' },
-    { name: 'Services', id: 'services' },
-    { name: 'Partner', id: 'partner' },
-    { name: 'Contact', id: 'contact' },
-  ];
 
   useEffect(() => {
     if (location.pathname !== '/') return;

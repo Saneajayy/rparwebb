@@ -40,6 +40,15 @@ const Working = () => {
   const sectionRef = useRef(null);
   const hasAnimated = useRef(false);
 
+  const animateSteps = () => {
+    steps.forEach((_, i) => {
+      setTimeout(() => {
+        setActiveStep(i);
+        setProgressWidth(((i + 1) / steps.length) * 100);
+      }, i * 500);
+    });
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -53,15 +62,6 @@ const Working = () => {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
-
-  const animateSteps = () => {
-    steps.forEach((_, i) => {
-      setTimeout(() => {
-        setActiveStep(i);
-        setProgressWidth(((i + 1) / steps.length) * 100);
-      }, i * 500);
-    });
-  };
 
   return (
     <div className="working-container max-w-7xl section">
