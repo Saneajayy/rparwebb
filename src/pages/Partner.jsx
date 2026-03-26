@@ -49,7 +49,7 @@ const Partner = () => {
             ))}
           </div>
 
-          </div>
+
         </div>
 
         <div className="partner-visual reveal delay-1">
