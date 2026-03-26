@@ -224,9 +224,9 @@ const Home = () => {
         </div>
 
         <div className="hero-visual reveal delay-3">
-          <div className="hand-mockup-wrapper">
-            <img src="/hand-mockup.png" alt="RPAR App" className="hand-mockup-img" />
-            <div className="hand-screen-overlay">
+          <div className="phone-mockup">
+            <div className="phone-notch"></div>
+            <div className="phone-screen" style={{ padding: 0, backgroundColor: '#000' }}>
               <PhoneAnimation />
             </div>
           </div>
