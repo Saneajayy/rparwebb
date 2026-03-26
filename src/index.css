@@ -1086,9 +1086,10 @@ main {
 .partner-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   text-align: left;
   max-width: 600px;
+  height: 100%;
 }
 
 .benefits-grid {
@@ -1096,6 +1097,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
   gap: 20px;
+  height: 100%;
 }
 
 .benefit-card {
