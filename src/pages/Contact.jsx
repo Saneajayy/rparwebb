@@ -29,11 +29,8 @@ const Contact = () => {
     <div className="contact-container max-w-7xl section">
       <div className="text-center mb-16 reveal">
         <h1 className="text-5xl font-bold mb-6">We're here to <span className="highlight">help</span></h1>
-        <p className="text-muted text-lg max-w-2xl mx-auto mb-4">
-          Have a question, concern, or feedback? Reach out to us anytime.
-        </p>
-        <p className="text-muted text-base max-w-2xl mx-auto" style={{ fontStyle: 'italic', opacity: 0.75 }}>
-          "At RPAR, every voice matters. Your satisfaction and feedback are what drive us to build a better, more trustworthy repair experience — for every customer, every time."
+        <p className="text-muted text-lg max-w-2xl mx-auto">
+          At RPAR, every voice matters. Have a question, concern, or feedback? Reach out to us anytime — your satisfaction and feedback drive us to build a better, more trustworthy repair experience for every customer, every time.
         </p>
       </div>
 
