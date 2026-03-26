@@ -162,7 +162,7 @@ const PhoneAnimation = () => {
         }}>
           <Icons.Check size={48} color="white" />
         </div>
-        <h4 style={{ fontWeight: 800, fontSize: '20px', color: '#0369a1' }}>Fixed it ✓</h4>
+        <h4 style={{ fontWeight: 800, fontSize: '20px', color: '#0369a1' }}>Fixed it</h4>
         <p style={{ color: '#0284c7', fontSize: '12px', marginTop: '6px' }}>Repair complete</p>
       </div>
     </div>
