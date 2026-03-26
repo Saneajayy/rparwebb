@@ -1025,16 +1025,16 @@ main {
 }
 
 .service-title {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #ffffff;
 }
 
 .service-desc {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 @media (max-width: 1024px) {
