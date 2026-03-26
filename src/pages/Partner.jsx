@@ -34,25 +34,7 @@ const Partner = () => {
       </div>
 
       <div className="partner-layout">
-        <div className="partner-content reveal">
-          <div className="benefits-grid">
-            {benefits.map((benefit, i) => (
-              <div key={i} className="benefit-card">
-                <div className="benefit-icon">
-                  {benefit.icon}
-                </div>
-                <div>
-                  <h4 className="benefit-title">{benefit.title}</h4>
-                  <p className="benefit-desc">{benefit.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-
-        </div>
-
-        <div className="partner-visual reveal delay-1">
+        <div className="partner-visual reveal">
           <div className="partner-dashboard-card glass">
             <div className="dashboard-metrics">
               <div className="metric">
@@ -76,6 +58,22 @@ const Partner = () => {
             <button className="hero-btn primary-btn w-full mt-8">
               Become a Repair Partner <Icons.ArrowRight size={18} />
             </button>
+          </div>
+        </div>
+
+        <div className="partner-content reveal delay-1">
+          <div className="benefits-grid">
+            {benefits.map((benefit, i) => (
+              <div key={i} className="benefit-card">
+                <div className="benefit-icon">
+                  {benefit.icon}
+                </div>
+                <div>
+                  <h4 className="benefit-title">{benefit.title}</h4>
+                  <p className="benefit-desc">{benefit.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
