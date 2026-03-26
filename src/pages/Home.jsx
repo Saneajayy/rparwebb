@@ -82,7 +82,7 @@ const PhoneAnimation = () => {
     <div className="phone-screen-content" style={{ position: 'relative', display: 'flex', flexDirection: 'column', height: '100%', width: '100%', background: 'linear-gradient(160deg, #e0f2fe 0%, #f0f9ff 100%)', borderRadius: '40px', overflow: 'hidden', padding: '16px' }}>
 
       {/* App Header (Sky Blue/Teal Theme) */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px', marginBottom: '20px', padding: '0 8px', gap: '12px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '54px', marginBottom: '20px', padding: '0 8px', gap: '12px' }}>
         <img src="/rpar-logo.png" alt="R" style={{ width: '22px', height: '22px', objectFit: 'contain', flexShrink: 0 }} />
 
         {/* Search Bar */}
