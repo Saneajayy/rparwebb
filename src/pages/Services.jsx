@@ -3,32 +3,32 @@ import * as Icons from 'lucide-react';
 const Services = () => {
   const services = [
     {
-      icon: <Icons.Smartphone size={32} className="text-gray-800" />,
+      icon: <Icons.Smartphone size={32} className="text-white" />,
       title: 'Mobile Repair',
       desc: 'Screen replacements, battery issues, charging ports, and software problems for all major brands.',
     },
     {
-      icon: <Icons.Laptop size={32} className="text-gray-800" />,
+      icon: <Icons.Laptop size={32} className="text-white" />,
       title: 'Laptop Repair',
       desc: 'Hardware repairs, keyboard replacements, screen fixes, and performance upgrades for laptops and MacBooks.',
     },
     {
-      icon: <Icons.Tv size={32} className="text-gray-800" />,
+      icon: <Icons.Tv size={32} className="text-white" />,
       title: 'TV Repair',
       desc: 'LED panel issues, sound problems, HDMI port faults, and smart TV software diagnostics.',
     },
     {
-      icon: <Icons.Home size={32} className="text-gray-800" />,
+      icon: <Icons.Home size={32} className="text-white" />,
       title: 'Home Appliance Repair',
       desc: 'Washing machines, refrigerators, air conditioners, microwave ovens, and other home appliances.',
     },
     {
-      icon: <Icons.Wrench size={32} className="text-gray-800" />,
+      icon: <Icons.Wrench size={32} className="text-white" />,
       title: 'Vehicle Services (Coming Soon)',
       desc: 'Two-wheeler and four-wheeler servicing, diagnostics, and minor repairs from trusted workshops.',
     },
     {
-      icon: <Icons.Zap size={32} className="text-yellow-500" />,
+      icon: <Icons.Zap size={32} className="text-yellow-400" />,
       title: 'Electronics Repair',
       desc: 'Cameras, printers, speakers, gaming consoles, and other consumer electronics diagnosed and repaired.',
     }
