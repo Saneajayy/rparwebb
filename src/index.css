@@ -1011,11 +1011,12 @@ main {
 
 .service-card {
   background: linear-gradient(-45deg,
-      rgba(14, 1, 120, 0.95) 0%,
-      rgba(49, 46, 129, 0.9) 50%,
-      rgba(14, 1, 120, 0.95) 100%);
-  background-size: 200% 200%;
-  animation: navGradient 15s ease infinite;
+      #0e0178 0%,
+      #134e4a 35%,
+      #0e7490 65%,
+      #0e0178 100%);
+  background-size: 400% 400%;
+  animation: navGradient 12s ease infinite;
   display: flex;
   flex-direction: column;
   height: 100%;
