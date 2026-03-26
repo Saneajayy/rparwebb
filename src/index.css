@@ -81,7 +81,7 @@ h6 {
 .highlight {
   position: relative;
   color: #111827;
-  font-size: inherit;
+  font-size: 5.4rem;
   display: inline-block;
   padding: 0 8px;
   z-index: 1;
@@ -1328,6 +1328,10 @@ main {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-16 {
