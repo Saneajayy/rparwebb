@@ -14,11 +14,13 @@ const TiltCard = ({ children, className }) => {
     const rotateX = (y - centerY) / 10;
     const rotateY = (centerX - x) / 10;
 
+    cardRef.current.style.transition = 'transform 0.1s ease-out';
     cardRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   };
 
   const onMouseLeave = () => {
     if (!cardRef.current) return;
+    cardRef.current.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
     cardRef.current.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
   };
 
@@ -29,7 +31,6 @@ const TiltCard = ({ children, className }) => {
       onMouseLeave={onMouseLeave}
       className={className}
       style={{
-        transition: 'transform 0.1s ease-out',
         transformStyle: 'preserve-3d'
       }}
     >
