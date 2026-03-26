@@ -71,9 +71,9 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-actions">
-          <button className="btn nav-download-btn">
+          <a href="/rpar.apk" download className="btn nav-download-btn">
             Download App
-          </button>
+          </a>
         </div>
       </nav>
     </div>

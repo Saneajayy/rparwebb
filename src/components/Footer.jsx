@@ -59,9 +59,9 @@ const Footer = () => {
               <li><Link to="/cancellation-refunds">Cancellation & Refunds</Link></li>
             </ul>
 
-            <button className="btn btn-outline footer-app-btn mt-8">
+            <a href="/rpar.apk" download className="btn btn-outline footer-app-btn mt-8">
               <Play size={16} fill="currentColor" /> Click to Download App
-            </button>
+            </a>
           </div>
         </div>
       </div>

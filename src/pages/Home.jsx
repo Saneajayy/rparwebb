@@ -205,12 +205,12 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons reveal delay-1">
-            <button className="btn hero-btn">
+            <a href="/rpar.apk" download className="btn hero-btn">
               <Icons.Play size={15} fill="currentColor" /> Click to Download App
-            </button>
-            <button className="btn hero-btn">
+            </a>
+            <a href="/rpar.apk" download className="btn hero-btn">
               <Icons.Flag size={15} /> Become a Repair Partner
-            </button>
+            </a>
           </div>
 
           <div className="hero-trust reveal delay-2">
