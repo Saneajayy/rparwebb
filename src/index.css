@@ -1098,8 +1098,13 @@ main {
 }
 
 .benefit-card {
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(-45deg,
+      rgba(14, 1, 120, 0.95) 0%,
+      rgba(49, 46, 129, 0.9) 50%,
+      rgba(14, 1, 120, 0.95) 100%);
+  background-size: 200% 200%;
+  animation: navGradient 15s ease infinite;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 24px;
   border-radius: var(--border-radius-md);
   transition: all 0.3s ease;
@@ -1107,7 +1112,8 @@ main {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  height: 100%;
+  color: #ffffff;
 }
 
 .benefit-card:hover {
@@ -1124,12 +1130,12 @@ main {
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 8px;
-  color: var(--color-text);
+  color: #ffffff;
 }
 
 .benefit-desc {
   font-size: 0.8rem;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
 }
 
@@ -1339,18 +1345,6 @@ main {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .flex {

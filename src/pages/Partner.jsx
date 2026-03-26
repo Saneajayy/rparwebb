@@ -3,22 +3,22 @@ import * as Icons from 'lucide-react';
 const Partner = () => {
   const benefits = [
     {
-      icon: <Icons.Megaphone size={24} className="text-primary" />,
+      icon: <Icons.Megaphone size={24} className="text-white" />,
       title: 'Reach More Customers',
       desc: 'Get discovered by customers actively looking for your services in your area.',
     },
     {
-      icon: <Icons.Smartphone size={24} className="text-primary" />,
+      icon: <Icons.Smartphone size={24} className="text-white" />,
       title: 'Digital Booking Management',
       desc: 'Manage all your repair orders, schedules, and updates from a single dashboard.',
     },
     {
-      icon: <Icons.Star size={24} className="text-primary" />,
+      icon: <Icons.Star size={24} className="text-white" />,
       title: 'Build Verified Trust',
       desc: 'A verified RPAR badge tells customers your shop meets our quality standards.',
     },
     {
-      icon: <Icons.LineChart size={24} className="text-primary" />,
+      icon: <Icons.LineChart size={24} className="text-white" />,
       title: 'Grow With Technology',
       desc: "Use RPAR's platform to scale your business without spending on expensive infrastructure.",
     }
