@@ -1012,8 +1012,8 @@ main {
 .service-card {
   background: linear-gradient(-45deg,
       #0e0178 0%,
-      #134e4a 35%,
-      #312e81 65%,
+      #0ea5e9 35%,
+      #8b5cf6 65%,
       #0e0178 100%);
   background-size: 400% 400%;
   animation: navGradient 12s ease infinite;
