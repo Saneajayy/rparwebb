@@ -48,6 +48,15 @@ const Partner = () => {
               </div>
             ))}
           </div>
+
+          <div className="flex gap-6 mt-12">
+            <button className="hero-btn primary-btn">
+              Become a Repair Partner <Icons.ArrowRight size={18} />
+            </button>
+            <button className="hero-btn dark-btn">
+              Apply to Partner <Icons.ArrowRight size={18} />
+            </button>
+          </div>
         </div>
 
         <div className="partner-visual reveal delay-1">
@@ -74,15 +83,6 @@ const Partner = () => {
         </div>
       </div>
 
-      <div className="partner-actions reveal delay-2 text-center mt-12">
-        <div className="flex justify-center gap-6">
-          <button className="hero-btn primary-btn">
-            Become a Repair Partner <Icons.ArrowRight size={18} />
-          </button>
-          <button className="hero-btn dark-btn">
-            Apply to Partner <Icons.ArrowRight size={18} />
-          </button>
-        </div>
       </div>
     </div>
   );
