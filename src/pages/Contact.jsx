@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="text-center mb-16 reveal">
         <h1 className="text-5xl font-bold mb-6">We're here to <span className="highlight">help</span></h1>
         <p className="text-muted text-lg max-w-2xl mx-auto">
-          At RPAR, every voice matters. Have a question, concern, or feedback? Reach out to us anytime — your satisfaction and feedback drive us to build a better, more trustworthy repair experience for every customer, every time.
+          At RPAR, every voice matters. Have a question, concern, or feedback? Reach out to us anytime. Your satisfaction and feedback drive us to build a better, more trustworthy repair experience for every customer, every time.
         </p>
       </div>
 
