@@ -238,24 +238,26 @@ h6 {
   box-shadow: var(--shadow-focus);
 }
 
-.btn-primary {
-  background-color: var(--color-text);
-  color: #fff;
+.primary-btn {
+  background-color: #000262;
+  color: #ffffff;
+  border: 1px solid #000262;
 }
 
-.btn-primary:hover {
-  background-color: #000;
-  box-shadow: var(--shadow-md);
+.primary-btn:hover {
+  background-color: #ffffff;
+  color: #000262;
 }
 
-.btn-blue {
-  background-color: var(--color-primary);
-  color: #fff;
+.dark-btn {
+  background-color: transparent;
+  color: #000262;
+  border: 1px solid #000262;
 }
 
-.btn-blue:hover {
-  background-color: #080045;
-  box-shadow: var(--shadow-md);
+.dark-btn:hover {
+  background-color: #000262;
+  color: #ffffff;
 }
 
 .btn-outline {

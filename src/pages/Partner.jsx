@@ -49,7 +49,7 @@ const Partner = () => {
             ))}
           </div>
 
-          <div className="flex gap-6 mt-12">
+          <div className="flex gap-6 mt-16">
             <button className="hero-btn primary-btn">
               Become a Repair Partner <Icons.ArrowRight size={18} />
             </button>
