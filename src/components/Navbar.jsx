@@ -71,7 +71,7 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-actions">
-          <a href="https://github.com/Utkarsh1087/rpar-web/releases/download/v1.0.0/rpar.3.apk" className="btn nav-download-btn">
+          <a href="https://dl.dropboxusercontent.com/scl/fi/krczdmqdio22fugra3xwn/rpar.apk?rlkey=j9x8kgkrlkcyzdef62y1eugi5&st=3ds2pq32" className="btn nav-download-btn">
             Download App
           </a>
         </div>

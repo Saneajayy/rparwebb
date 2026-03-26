@@ -15,19 +15,19 @@ const Footer = () => {
           <p className="footer-desc text-sm">
             Trusted repair services, simplified. Connecting customers with verified repair professionals through a secure, transparent platform.
           </p>
-     <div className="social-links flex gap-4 mt-4">
-  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-    <FaInstagram size={20} />
-  </a>
+          <div className="social-links flex gap-4 mt-4">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaInstagram size={20} />
+            </a>
 
-  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-    <FaLinkedin size={20} />
-  </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaLinkedin size={20} />
+            </a>
 
-  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-    <FaXTwitter size={20} />
-  </a>
-</div>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaXTwitter size={20} />
+            </a>
+          </div>
         </div>
 
         <div className="footer-links-grid">
@@ -59,7 +59,7 @@ const Footer = () => {
               <li><Link to="/cancellation-refunds">Cancellation & Refunds</Link></li>
             </ul>
 
-            <a href="https://github.com/Utkarsh1087/rpar-web/releases/download/v1.0.0/rpar.3.apk" className="btn btn-outline footer-app-btn mt-8">
+            <a href="https://dl.dropboxusercontent.com/scl/fi/krczdmqdio22fugra3xwn/rpar.apk?rlkey=j9x8kgkrlkcyzdef62y1eugi5&st=3ds2pq32" className="btn btn-outline footer-app-btn mt-8">
               <Play size={16} fill="currentColor" /> Click to Download App
             </a>
           </div>

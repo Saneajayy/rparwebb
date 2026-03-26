@@ -205,7 +205,7 @@ const Home = () => {
           </p>
 
           <div className="hero-buttons reveal delay-1">
-            <a href="https://github.com/Utkarsh1087/rpar-web/releases/download/v1.0.0/rpar.3.apk" className="btn hero-btn">
+            <a href="https://dl.dropboxusercontent.com/scl/fi/krczdmqdio22fugra3xwn/rpar.apk?rlkey=j9x8kgkrlkcyzdef62y1eugi5&st=3ds2pq32" className="btn hero-btn">
               <Icons.Play size={15} fill="currentColor" /> Click to Download App
             </a>
             <a href="#partner" className="btn hero-btn">
