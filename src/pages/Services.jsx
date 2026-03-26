@@ -1,4 +1,45 @@
+import React, { useState, useRef } from 'react';
 import * as Icons from 'lucide-react';
+
+const TiltCard = ({ children, className }) => {
+  const [rotate, setRotate] = useState({ x: 0, y: 0 });
+  const cardRef = useRef(null);
+
+  const onMouseMove = (e) => {
+    if (!cardRef.current) return;
+    const card = cardRef.current.getBoundingClientRect();
+    const x = e.clientX - card.left;
+    const y = e.clientY - card.top;
+    const centerX = card.width / 2;
+    const centerY = card.height / 2;
+    const rotateX = (y - centerY) / 8; // Slightly more sensitive
+    const rotateY = (centerX - x) / 8;
+
+    setRotate({ x: rotateX, y: rotateY });
+  };
+
+  const onMouseLeave = () => {
+    setRotate({ x: 0, y: 0 });
+  };
+
+  return (
+    <div
+      ref={cardRef}
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
+      className={className}
+      style={{
+        transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
+        transition: rotate.x === 0 ? 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)' : 'none',
+        transformStyle: 'preserve-3d'
+      }}
+    >
+      <div style={{ transform: 'translateZ(20px)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+        {children}
+      </div>
+    </div>
+  );
+};
 
 const Services = () => {
   const services = [
@@ -46,13 +87,13 @@ const Services = () => {
 
       <div className="services-grid">
         {services.map((service, index) => (
-          <div key={index} className={`service-card reveal delay-${index + 1}`}>
+          <TiltCard key={index} className={`service-card reveal delay-${index + 1}`}>
             <div className="service-icon-wrapper">
               {service.icon}
             </div>
             <h3 className="service-title">{service.title}</h3>
             <p className="service-desc">{service.desc}</p>
-          </div>
+          </TiltCard>
         ))}
       </div>
     </div>

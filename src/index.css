@@ -270,9 +270,17 @@ h6 {
 }
 
 @keyframes navGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .navbar-wrapper {
@@ -293,11 +301,10 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(-45deg, 
-    rgba(14, 1, 120, 0.95) 0%, 
-    rgba(49, 46, 129, 0.9) 50%, 
-    rgba(14, 1, 120, 0.95) 100%
-  );
+  background: linear-gradient(-45deg,
+      rgba(14, 1, 120, 0.95) 0%,
+      rgba(49, 46, 129, 0.9) 50%,
+      rgba(14, 1, 120, 0.95) 100%);
   background-size: 200% 200%;
   animation: navGradient 15s ease infinite;
   backdrop-filter: blur(12px);
@@ -472,33 +479,41 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  
+
   color: white;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background: #ff3b3b; /* or your brand color */
+  background: #ff3b3b;
+  /* or your brand color */
   transform: translateY(-3px);
 }
 
 
 
 .social-icon:nth-child(1):hover {
-  background: linear-gradient(
-    45deg,
-    #FCAF45,
-    #FF7E50,
-    #F56040,
-    #E1306C,
-    #C13584,
-    #833AB4,
-    #405DE6
-  );
+  background: linear-gradient(45deg,
+      #FCAF45,
+      #FF7E50,
+      #F56040,
+      #E1306C,
+      #C13584,
+      #833AB4,
+      #405DE6);
   color: #fff;
 }
-.social-icon:nth-child(2):hover { background: #0077B5; } /* LinkedIn */
-.social-icon:nth-child(3):hover { background: #1DA1F2; } /* Twitter */
+
+.social-icon:nth-child(2):hover {
+  background: #0077B5;
+}
+
+/* LinkedIn */
+.social-icon:nth-child(3):hover {
+  background: #1DA1F2;
+}
+
+/* Twitter */
 
 .footer-links-grid {
   display: flex;
@@ -888,20 +903,6 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: var(--border-radius-md);
-  padding: 30px 20px;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  position: relative;
-  height: 100%;
-}
-
-.timeline-step:hover {
-  border-color: #3b82f6;
-  box-shadow: 0 15px 30px -10px rgba(59, 130, 246, 0.2);
-  z-index: 10;
 }
 
 .step-icon-wrapper {
@@ -1009,11 +1010,10 @@ main {
 }
 
 .service-card {
-  background: linear-gradient(-45deg, 
-    rgba(14, 1, 120, 0.95) 0%, 
-    rgba(49, 46, 129, 0.9) 50%, 
-    rgba(14, 1, 120, 0.95) 100%
-  );
+  background: linear-gradient(-45deg,
+      rgba(14, 1, 120, 0.95) 0%,
+      rgba(49, 46, 129, 0.9) 50%,
+      rgba(14, 1, 120, 0.95) 100%);
   background-size: 200% 200%;
   animation: navGradient 15s ease infinite;
   display: flex;
@@ -1029,8 +1029,8 @@ main {
 .service-card:hover,
 .service-card.active-card {
   border-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 15px 40px -10px rgba(14, 1, 120, 0.5);
-  transform: translateY(-8px);
+  box-shadow: 0 20px 50px -10px rgba(14, 1, 120, 0.6);
+  z-index: 10;
 }
 
 .service-icon-wrapper {
@@ -1039,16 +1039,16 @@ main {
 }
 
 .service-title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #ffffff;
 }
 
 .service-desc {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.8);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 @media (max-width: 1024px) {
