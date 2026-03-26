@@ -30,7 +30,6 @@ const Partner = () => {
       <div className="partner-layout">
         
         <div className="partner-content reveal">
-          <div className="badge">FOR REPAIR SHOPS</div>
           <h1 className="text-5xl font-bold mb-6">Own a Repair Shop? <span className="highlight">Grow With RPAR.</span></h1>
           <p className="text-muted text-lg mb-10 max-w-2xl">
             Join a growing network of trusted repair professionals. RPAR gives you the technology to reach more customers, manage bookings digitally, and build a reputation that works for you.

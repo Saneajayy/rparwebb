@@ -78,7 +78,6 @@ const Services = () => {
   return (
     <div className="services-container max-w-7xl section">
       <div className="text-center mb-16 reveal">
-        <div className="badge mb-4">SERVICES</div>
         <h1 className="text-5xl font-bold mb-6"><span className="highlight" style={{ color: '#000262' }}>Repair</span> services for all<br/>your devices</h1>
         <p className="text-muted text-lg max-w-2xl mx-auto">
           From smartphones to home appliances, we have verified<br/>professionals ready to help.

@@ -28,7 +28,6 @@ const Contact = () => {
   return (
     <div className="contact-container max-w-7xl section">
       <div className="text-center mb-16 reveal">
-        <div className="badge">CONTACT</div>
         <h1 className="text-5xl font-bold mb-6">We're here to <span className="highlight">help</span></h1>
         <p className="text-muted text-lg max-w-2xl mx-auto">
           Have a question, concern, or feedback? Reach out to us anytime.

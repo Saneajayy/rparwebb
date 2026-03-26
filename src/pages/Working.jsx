@@ -1,42 +1,4 @@
-import React, { useState, useRef } from 'react';
 import * as Icons from 'lucide-react';
-
-const TiltCard = ({ children, className, index }) => {
-  const [rotate, setRotate] = useState({ x: 0, y: 0 });
-  const cardRef = useRef(null);
-
-  const onMouseMove = (e) => {
-    if (!cardRef.current) return;
-    const card = cardRef.current.getBoundingClientRect();
-    const x = e.clientX - card.left;
-    const y = e.clientY - card.top;
-    const centerX = card.width / 2;
-    const centerY = card.height / 2;
-    const rotateX = (y - centerY) / 10;
-    const rotateY = (centerX - x) / 10;
-
-    setRotate({ x: rotateX, y: rotateY });
-  };
-
-  const onMouseLeave = () => {
-    setRotate({ x: 0, y: 0 });
-  };
-
-  return (
-    <div
-      ref={cardRef}
-      onMouseMove={onMouseMove}
-      onMouseLeave={onMouseLeave}
-      className={className}
-      style={{
-        transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg)`,
-        transition: rotate.x === 0 ? 'transform 0.5s ease' : 'none'
-      }}
-    >
-      {children}
-    </div>
-  );
-};
 
 const Working = () => {
   const steps = [
@@ -76,23 +38,23 @@ const Working = () => {
     <div className="working-container max-w-7xl section">
       <div className="text-center mb-16 reveal">
         <div className="badge">HOW IT WORKS</div>
-        <h1 className="text-5xl font-bold mb-6">A simple, <span className="highlight">secure</span><br/>process from start to finish</h1>
+        <h1 className="text-5xl font-bold mb-6">A simple, <span className="highlight">secure</span><br />process from start to finish</h1>
         <p className="text-muted text-lg max-w-2xl mx-auto">
           Every step is designed to protect your device and give you complete peace of mind.
         </p>
       </div>
 
-      <div className="timeline-container">
-        <div className="timeline-line reveal"></div>
+      <div className="timeline-container reveal delay-1">
+        <div className="timeline-line"></div>
         <div className="timeline-steps">
           {steps.map((step, index) => (
-            <TiltCard key={index} index={index} className={`timeline-step reveal delay-${index + 1}`}>
+            <div key={index} className="timeline-step">
               <div className={`step-icon-wrapper ${step.colorClass}`}>
                 {step.icon}
               </div>
               <h3 className="step-title">{step.title}</h3>
               <p className="step-desc">{step.desc}</p>
-            </TiltCard>
+            </div>
           ))}
         </div>
       </div>
