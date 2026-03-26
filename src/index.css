@@ -8,7 +8,7 @@
   --color-bg: #fafafa;
   --color-text: #111827;
   --color-text-muted: #6b7280;
-  --color-primary: #0e0178;
+  --color-primary: #000262;
   --color-primary-light: #eff6ff;
   --color-surface: #ffffff;
   --color-border: #e5e7eb;
@@ -94,7 +94,7 @@ h6 {
   top: 30%;
   left: -2px;
   right: -2px;
-  background-color: #e9d5ff;
+  background-color: #c7d2fe;
   border-radius: 4px;
   z-index: -1;
   transform: rotate(-1deg);
@@ -304,9 +304,9 @@ h6 {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(-45deg,
-      rgba(14, 1, 120, 0.95) 0%,
-      rgba(49, 46, 129, 0.9) 50%,
-      rgba(14, 1, 120, 0.95) 100%);
+      rgba(0, 2, 98, 0.95) 0%,
+      rgba(0, 4, 140, 0.85) 50%,
+      rgba(0, 2, 98, 0.95) 100%);
   background-size: 200% 200%;
   animation: navGradient 15s ease infinite;
   backdrop-filter: blur(12px);
@@ -336,7 +336,7 @@ h6 {
 .logo-icon {
   font-family: 'Unbounded', sans-serif !important;
   background-color: transparent;
-  color: #0e0178;
+  color: #000262;
   width: 34px;
   height: 34px;
   display: flex;
@@ -345,7 +345,7 @@ h6 {
   border-radius: 8px;
   font-weight: 800;
   font-size: 18px;
-  border: 1.5px solid #0e0178;
+  border: 1.5px solid #000262;
 }
 
 .logo-text {
@@ -408,7 +408,7 @@ h6 {
 
 .nav-download-btn:hover {
   background: #fff;
-  color: #0e0178;
+  color: #000262;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -633,7 +633,7 @@ main {
 
 .hero-section::after {
   right: -250px;
-  background: #0e0178;
+  background: #000262;
   opacity: 0.12;
 }
 
@@ -682,11 +682,11 @@ main {
 
 .repair-gradient {
   background: linear-gradient(110deg,
-      #0e0178 30%,
+      #000262 30%,
       #0ea5e9 45%,
       #ffffff 50%,
       #0ea5e9 55%,
-      #0e0178 70%);
+      #000262 70%);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -718,9 +718,9 @@ main {
   border-radius: 999px;
   padding: 10px 22px;
   font-size: 0.85rem;
-  background-color: #0e0178;
+  background-color: #000262;
   color: #ffffff;
-  border: 1px solid #0e0178;
+  border: 1px solid #000262;
   white-space: nowrap;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
@@ -731,8 +731,8 @@ main {
 
 .hero-btn:hover {
   background-color: #ffffff;
-  color: #0e0178;
-  border-color: #0e0178;
+  color: #000262;
+  border-color: #000262;
   transform: translateY(-2px);
 }
 
@@ -771,7 +771,7 @@ main {
 }
 
 .trust-text span {
-  color: #0e0178 !important;
+  color: #000262 !important;
 }
 
 .hero-visual {
@@ -810,7 +810,7 @@ main {
 .phone-screen {
   width: 100%;
   height: 100%;
-  background-color: #0e0178;
+  background-color: #000262;
   position: relative;
   padding: 24px;
   display: flex;
@@ -1013,9 +1013,9 @@ main {
 
 .service-card {
   background: linear-gradient(-45deg,
-      rgba(14, 1, 120, 0.95) 0%,
-      rgba(49, 46, 129, 0.9) 50%,
-      rgba(14, 1, 120, 0.95) 100%);
+      rgba(0, 2, 98, 0.95) 0%,
+      rgba(0, 4, 140, 0.85) 50%,
+      rgba(0, 2, 98, 0.95) 100%);
   background-size: 200% 200%;
   animation: navGradient 15s ease infinite;
   display: flex;
@@ -1103,9 +1103,9 @@ main {
 
 .benefit-card {
   background: linear-gradient(-45deg,
-      rgba(14, 1, 120, 0.95) 0%,
-      rgba(49, 46, 129, 0.9) 50%,
-      rgba(14, 1, 120, 0.95) 100%);
+      rgba(0, 2, 98, 0.95) 0%,
+      rgba(0, 4, 140, 0.85) 50%,
+      rgba(0, 2, 98, 0.95) 100%);
   background-size: 200% 200%;
   animation: navGradient 15s ease infinite;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1260,9 +1260,9 @@ main {
 
 .contact-card {
   background: linear-gradient(-45deg,
-      rgba(14, 1, 120, 0.95) 0%,
-      rgba(49, 46, 129, 0.9) 50%,
-      rgba(14, 1, 120, 0.95) 100%);
+      rgba(0, 2, 98, 0.95) 0%,
+      rgba(0, 4, 140, 0.85) 50%,
+      rgba(0, 2, 98, 0.95) 100%);
   background-size: 200% 200%;
   animation: navGradient 15s ease infinite;
   border: 1px solid rgba(255, 255, 255, 0.1);
