@@ -37,7 +37,6 @@ const Working = () => {
   return (
     <div className="working-container max-w-7xl section">
       <div className="text-center mb-16 reveal">
-        <div className="badge">HOW IT WORKS</div>
         <h1 className="text-5xl font-bold mb-6">A simple, <span className="highlight">secure</span><br />process from start to finish</h1>
         <p className="text-muted text-lg max-w-2xl mx-auto">
           Every step is designed to protect your device and give you complete peace of mind.
