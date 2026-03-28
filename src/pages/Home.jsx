@@ -62,8 +62,8 @@ const PhoneAnimation = () => {
 
   const appSteps = [
     { title: 'Device Selected', iconSmall: <Icons.Smartphone size={14} color="#0ea5e9" />, desc: 'Screen Repair - iPhone 14' },
-    { title: 'Cost Estimated', iconSmall: <Icons.FileText size={14} color="#0284c7" />, desc: '₹1499 Approved by Customer' },
     { title: 'Pickup Verified', iconSmall: <Icons.ShieldCheck size={14} color="#0ea5e9" />, desc: 'Agent OTP Verified' },
+    { title: 'Cost Estimated', iconSmall: <Icons.FileText size={14} color="#0284c7" />, desc: '₹1499 Approved by Customer' },
     { title: 'Repair Active', iconSmall: <Icons.Wrench size={14} color="#0284c7" />, desc: 'Diagnostics & Repair Ongoing' },
     { title: 'Delivered', iconSmall: <Icons.Home size={14} color="#0ea5e9" />, desc: 'Payment securely processed.' }
   ];

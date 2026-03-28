@@ -9,16 +9,16 @@ const steps = [
     desc: 'Choose your device, describe the issue, and pick a convenient time slot right from the app.',
   },
   {
-    icon: <Icons.ClipboardList size={28} />,
-    number: '02',
-    title: 'Receive an Estimate',
-    desc: 'A verified repair partner reviews your request and sends a transparent cost estimate.',
-  },
-  {
     icon: <Icons.Lock size={28} />,
-    number: '03',
+    number: '02',
     title: 'OTP Verified Pickup',
     desc: 'Your device is only collected after you confirm with a secure one-time password.',
+  },
+  {
+    icon: <Icons.ClipboardList size={28} />,
+    number: '03',
+    title: 'Receive an Estimate',
+    desc: 'A verified repair partner reviews your request and sends a transparent cost estimate.',
   },
   {
     icon: <Icons.Wrench size={28} />,
